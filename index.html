@@ -4,13 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pro Code</title>
+    <!-- font owesome -->
     <script src="https://kit.fontawesome.com/062ecc5e49.js" crossorigin="anonymous"></script>
+    <!-- bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   </head>
   <body>
     <header class="container">
         <!-- navbar start -->
-        <section class="sticky-top">
+        <section class="fixed-top">
             <nav class="navbar navbar-expand-lg bg-light ">
                 <div class="container-fluid">
                   <a class="navbar-brand fw-bold fs-2 me-5" href="#">Pro Code</a>
@@ -303,9 +305,45 @@
             </p>
             </div>
           </div>
+
+          <!-- modal start -->
+          <!-- Button trigger modal -->
           <div class="d-flex align-items-center m-5">
-            <button  type="button" class="btn btn-light btn-md text-center text-primary fw-semibold">Register Now</button>
+            <button type="button" class="btn btn-light btn-md text-center text-primary fw-semibold" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Register Now
+            </button>
           </div>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Check Your Favourite work</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <!-- checkbox start -->
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Web Development
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Web Design
+                    </label>
+                  </div>
+                  <!-- checkbox end -->
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- modal end--> 
         </section>
         <!-- ready box end -->
 
